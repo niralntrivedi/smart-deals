@@ -1,0 +1,15 @@
+Jaunt 1.1.2 Release Notes
+
+Jaunt is a free Java library that makes web scraping & automation easier.
+
+Jaunt 1.1.2 public release date: December 22, 2015 
+Jaunt 1.1.2 software expiry date: January 31, 2016
+
+Installation Instructions & Quickstart Tutorial:
+http://jaunt-api.com/jaunt-tutorial.htm
+
+CHANGES FOR VERSION 1.1.2
+
+- bugfix: UserAgent.response was incorrectly set to null in cases where the server returned status code >= 400.  
+- bugfix: HttpResponse.getMessage() now returns the HTML of the error message in cases where the server responds with status code 404.
+- bugfix: in rare cases, Document.getSource() incorrectly returned the most recent JSON source rather than the most recent HTML/XHML source.
